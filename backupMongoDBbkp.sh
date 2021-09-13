@@ -213,7 +213,7 @@ exec 2> $LOGERR     # stderr replaced with file $LOGERR.
 # Database dump function
 dbdump () {
 ##mongodump --host=$DBHOST --out=$1 $OPT
-mongodump --host auazt0035.srv.allianz:27017 -uMongoAdmin -p 'Admin1234!' --out=$1
+mongodump --host a:27017 -uMongoAdmin -p 'Admin1234!' --out=$1
 #mongodump --host auazt0035.srv.allianz:27017 --ssl --sslCAFile /opt/mongodb/data/ssl/mongoCA.crt --sslPEMKeyFile /opt/mongodb/data/ssl/mongodb_prod.pem -uMongoAdmin -p 'Admin1234!' --out=$1
 
 return 0
